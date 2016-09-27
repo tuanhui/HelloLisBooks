@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/single_book_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/concept_card_bg_selector"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="12.0dip"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip"
+        android:paddingTop="12.0dip">
+
+        <ImageView
+            android:id="@+id/concept_cover_img"
+            android:layout_width="@dimen/book_pic_width"
+            android:layout_height="@dimen/book_pic_height"
+            android:layout_marginRight="12.0dip"
+            android:background="@mipmap/book_default_cover_bg"
+            android:contentDescription="@null"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bg"/>
+
+        <TextView
+            android:id="@+id/concept_cover_tag"
+            android:layout_width="30.0dip"
+            android:layout_height="15.0dip"
+            android:layout_alignBottom="@+id/concept_cover_img"
+            android:layout_alignLeft="@+id/concept_cover_img"
+            android:layout_marginBottom="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:gravity="center"
+            android:textColor="@color/text_color_c104"
+            android:textSize="@dimen/text_size_class_1"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/concept_tingbook_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/concept_cover_img"
+            android:layout_alignLeft="@+id/concept_cover_img"
+            android:layout_marginBottom="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/concept_title"
+            style="@style/booklist_title_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/concept_cover_img"
+            android:lineSpacingExtra="5.0dip"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/concept_content"
+            style="@style/booklist_des_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/concept_title"
+            android:layout_marginBottom="3.0dip"
+            android:layout_toRightOf="@+id/concept_cover_img"
+            android:lineSpacingExtra="3.0dip"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/concept_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/concept_cover_img"
+            android:drawableLeft="@mipmap/ic_play"
+            android:drawablePadding="4.0dip"
+            android:minEms="4"
+            android:text="5555万"
+            android:textColor="@color/text_color_c103"
+            android:textSize="@dimen/text_size_class_2"/>
+
+        <TextView
+            android:id="@+id/concept_tag_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginLeft="4.0dip"
+            android:background="@drawable/concept_bookitem_tag_level4"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:text="10.0分"
+            android:textColor="#fff39718"
+            android:textSize="@dimen/text_size_class_1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

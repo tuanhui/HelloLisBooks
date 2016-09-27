@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">XiangShengXP</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="status_bar"></string>
+</resources>

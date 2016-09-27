@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#E1E6EB</color>
+    <color name="text_color_c103">#ff999999</color>
+    <color name="concept_card_bg_pressed">#ffe3e4e5</color>
+    <color name="concept_card_bg">#fff</color>
+    <color name="booklist_des_textcolor">#ffe65051</color>
+    <color name="common_textcolor_secondary">#ff999999</color>
+    <color name="concept_divider_line">#fff2f2f2</color>
+</resources>
